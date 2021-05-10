@@ -125,7 +125,7 @@ ul {
 .scoreboard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #fff;
   border-radius: 0.25rem;
@@ -181,6 +181,7 @@ ul {
   padding: 2rem;
   margin: 1rem;
   border-radius: 0.25rem;
+  text-align: center;
 }
 
 .list-container {
@@ -203,4 +204,47 @@ ul {
 .dropdown:focus,
 .dropdown:hover {
   outline: none;
+}
+
+@media (max-width: 550px) {
+  .dropdown {
+    width: 80vw;
+    font-size: 1rem;
+  }
+
+  .trick-name {
+    font-size: 1rem;
+  }
+
+  .scoreboard-text {
+    font-size: 1rem;
+  }
+
+  .player {
+    font-size: 1rem;
+    margin: 0.125rem;
+  }
+
+  .score {
+    font-size: 1rem;
+    margin: 0.25rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .scoreboard-text {
+    display: none;
+  }
+
+  .nav-links {
+    padding: 1rem 2rem;
+  }
+
+  .trick {
+    padding: 1rem;
+  }
+
+  .scoreboard {
+    padding: 1rem;
+  }
 }
