@@ -94,10 +94,10 @@ const Main = () => {
         ) : null}
       </div>
       <div className="scoreboard">
-        <h1>Scoreboard</h1>
+        <h1 className="scoreboard-text">Scoreboard</h1>
         <div className="counters">
-          <Counter player="Player 1" />
-          <Counter player="Player 2" />
+          <Counter player="Player One" />
+          <Counter player="Player Two" />
         </div>
       </div>
     </main>
