@@ -29,7 +29,7 @@ const Home = () => {
         </a>
         <a
           className="github-logo"
-          href="https://github.com/narasaka"
+          href="https://github.com/narasaka/damatricks"
           target="_blank"
           rel="noreferrer"
         >

@@ -24,7 +24,7 @@ const Header = () => {
               />
             </a>
             <a
-              href="https://github.com/narasaka"
+              href="https://github.com/narasaka/damatricks"
               target="_blank"
               rel="noreferrer"
             >
