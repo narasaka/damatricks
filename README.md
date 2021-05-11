@@ -17,3 +17,6 @@ A web application built to aid kendama competitions (or your practice sessions i
 ## available tricklists
 
 - SKO No Pro Open 2021
+- IKO 2021
+- BATB 2021
+- NAKO 2020
