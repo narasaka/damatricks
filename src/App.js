@@ -11,7 +11,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/list" exact component={List} />
-        <Route path="/" component={NotFound} />
+        <Route component={NotFound} />
       </Switch>
     </Router>
   );
