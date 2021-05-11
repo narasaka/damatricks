@@ -206,6 +206,10 @@ ul {
   outline: none;
 }
 
+.error-container {
+  justify-content: center;
+}
+
 @media (max-width: 550px) {
   .dropdown {
     width: 80vw;
