@@ -18,7 +18,7 @@ const Header = () => {
               rel="noreferrer"
             >
               <img
-                className="home-icons ig-logo"
+                className="nav-icons ig-logo"
                 src={igLogo}
                 alt="instagram logo"
               />
@@ -28,7 +28,11 @@ const Header = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img className="home-icons" src={githubLogo} alt="github logo" />
+              <img
+                className="nav-icons github-logo"
+                src={githubLogo}
+                alt="github logo"
+              />
             </a>
           </li>
         </ul>

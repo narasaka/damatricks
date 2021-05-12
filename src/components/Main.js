@@ -111,7 +111,7 @@ const Main = () => {
           />
         </div>
         {playerOneScore || playerTwoScore ? (
-          <button className="btn random" onClick={handleResetScore}>
+          <button className="btn reset-score" onClick={handleResetScore}>
             Reset scoreboard
           </button>
         ) : null}
