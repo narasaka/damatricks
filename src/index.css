@@ -139,7 +139,7 @@ ul {
 }
 
 .counter {
-  padding: 1rem 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -155,7 +155,7 @@ ul {
 .random {
   background-color: var(--color-2);
   border-radius: 0.25rem;
-  margin: 1rem 2rem;
+  margin-top: 1rem;
 }
 
 .reset {

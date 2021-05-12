@@ -8,7 +8,9 @@ const Main = () => {
   const [currTrick, setCurrTrick] = useState("Choose a tricklist to start!");
   const [selectedValue, setSelectedValue] = useState("default");
   const [showNext, setShowNext] = useState(false);
-  const [showReset, setShowReset] = useState(false);
+  const [showResetList, setShowResetList] = useState(false);
+  const [playerOneScore, setPlayerOneScore] = useState(0);
+  const [playerTwoScore, setPlayerTwoScore] = useState(0);
 
   const handleChange = (event) => {
     const compObj = comps.find((comp) => comp.id === event.target.value);
@@ -23,7 +25,7 @@ const Main = () => {
     setSelectedValue(compObj.id);
     setCurrTrick(newTrick);
     setTricklist(newTricklist);
-    setShowReset(false);
+    setShowResetList(false);
     setShowNext(true);
   };
 
@@ -37,7 +39,7 @@ const Main = () => {
     if (tricklist.length === 0) {
       console.log("done");
       setCurrTrick("");
-      setShowReset(true);
+      setShowResetList(true);
       setShowNext(false);
       return;
     }
@@ -45,7 +47,7 @@ const Main = () => {
     setTricklist(newTricklist);
   };
 
-  const handleReset = () => {
+  const handleResetList = () => {
     const trickIndex = Math.floor(Math.random() * initialList.length);
     const newTrick = initialList[trickIndex];
     const newTricklist = [].concat(
@@ -54,13 +56,14 @@ const Main = () => {
     );
     setCurrTrick(newTrick);
     setTricklist(newTricklist);
-    setShowReset(false);
+    setShowResetList(false);
     setShowNext(true);
   };
 
-  React.useEffect(() => {
-    console.log(tricklist);
-  }, [tricklist]);
+  const handleResetScore = () => {
+    setPlayerOneScore(0);
+    setPlayerTwoScore(0);
+  };
 
   return (
     <main>
@@ -80,26 +83,39 @@ const Main = () => {
           );
         })}
       </select>
-      <div className="trick">
+      <section className="trick">
         <h1 className="trick-name">{currTrick}</h1>
         {showNext === false ? null : (
           <button className="btn random" onClick={handleNext}>
             Next trick
           </button>
         )}
-        {showReset ? (
-          <button className="btn random" onClick={handleReset}>
+        {showResetList ? (
+          <button className="btn reset" onClick={handleResetList}>
             Reset tricklist
           </button>
         ) : null}
-      </div>
-      <div className="scoreboard">
+      </section>
+      <section className="scoreboard">
         <h1 className="scoreboard-text">Scoreboard</h1>
         <div className="counters">
-          <Counter player="Player One" />
-          <Counter player="Player Two" />
+          <Counter
+            player="Player One"
+            score={playerOneScore}
+            setScore={setPlayerOneScore}
+          />
+          <Counter
+            player="Player Two"
+            score={playerTwoScore}
+            setScore={setPlayerTwoScore}
+          />
         </div>
-      </div>
+        {playerOneScore || playerTwoScore ? (
+          <button className="btn random" onClick={handleResetScore}>
+            Reset scoreboard
+          </button>
+        ) : null}
+      </section>
     </main>
   );
 };
