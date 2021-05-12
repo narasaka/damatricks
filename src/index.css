@@ -227,11 +227,6 @@ ul {
 }
 
 @media (max-width: 550px) {
-  main {
-    justify-content: space-between;
-    min-height: 80vh;
-  }
-
   .dropdown {
     width: 80vw;
     font-size: 1rem;
