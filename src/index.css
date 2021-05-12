@@ -211,6 +211,7 @@ ul {
   border-radius: 0.25rem;
   padding: 1rem;
   text-align: center;
+  text-align-last: center;
   cursor: pointer;
   -moz-appearance: none;
   -webkit-appearance: none;
