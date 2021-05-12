@@ -4,9 +4,10 @@ A web application built to aid kendama competitions (or your practice sessions i
 
 ## features
 
-- Randomized tricklist with no replacements (say goodbye to random number generators)
+- Resettable, randomized tricklist with no repetitions (say goodbye to random number generators)
 - Scoreboard (so judges won't forget your scores)
 - Loads of tricklist (SKO, NAKO, BATB, KWC, etc)
+- Forever ad-free
 
 ## how can I contribute?
 
