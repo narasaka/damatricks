@@ -1,6 +1,10 @@
 # damatricks
 
-A web application built to aid kendama competitions (or your practice sessions if you're not a Gallagher).
+**A web application built to aid kendama competitions (or your practice sessions if you're not a Gallagher).**  
+  
+![GitHub](https://img.shields.io/github/license/narasaka/damatricks?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/narasaka/damatricks?style=flat-square)
+
 
 ## features
 
@@ -9,11 +13,11 @@ A web application built to aid kendama competitions (or your practice sessions i
 - Loads of tricklist (SKO, NAKO, BATB, KWC, etc)
 - Forever ad-free
 
-## how can I contribute?
+## contributions
 
-- You can help me get more trickslists from past competitions
+- You can help me get more trickslists from past competitions (coming soon)
 - You can also request a feature you would like (here on github or shoot me a dm)
-- yeah
+- Yeah
 
 ## available tricklists
 
