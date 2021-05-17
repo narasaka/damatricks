@@ -139,6 +139,7 @@ ul {
   border-radius: 0.25rem;
   margin: 0 1rem 0 1rem;
   padding: 2rem;
+  max-width: 25rem;
 }
 
 .counters {
@@ -177,6 +178,7 @@ ul {
   background-color: var(--color-1);
   border-radius: 0.25rem;
   margin-top: 1rem;
+  transition: background-color 0.3s;
 }
 
 .player {
