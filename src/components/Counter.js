@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Counter = (props) => {
+  const [name, setName] = useState(props.player);
   const handlePlus = () => {
     props.setScore((score) => score + 1);
   };
   const handleMinus = () => {
     if (props.score > 0) props.setScore((score) => score - 1);
   };
+  const handleChange = (event) => {
+    setName(event.target.value);
+  };
 
   return (
     <div className="counter">
-      <div className="player">{props.player}</div>
+      <input
+        className="player"
+        type="text"
+        value={name}
+        onChange={handleChange}
+      />
       <h2 className="score">{props.score}</h2>
       <button className="btn minus" onClick={handleMinus}>
         -
