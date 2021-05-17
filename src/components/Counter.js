@@ -8,8 +8,8 @@ const Counter = (props) => {
   const handleMinus = () => {
     if (props.score > 0) props.setScore((score) => score - 1);
   };
-  const handleChange = (target) => {
-    setName(target.value);
+  const handleChange = (event) => {
+    setName(event.target.value);
   };
 
   return (
