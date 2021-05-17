@@ -110,11 +110,15 @@ const Main = () => {
             setScore={setPlayerTwoScore}
           />
         </div>
-        {playerOneScore || playerTwoScore ? (
-          <button className="btn reset-score" onClick={handleResetScore}>
-            Reset scoreboard
-          </button>
-        ) : null}
+        <button
+          className="btn reset-score"
+          style={
+            playerOneScore || playerTwoScore ? {} : { backgroundColor: "grey" }
+          }
+          onClick={handleResetScore}
+        >
+          Reset scoreboard
+        </button>
       </section>
     </main>
   );
