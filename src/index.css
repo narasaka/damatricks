@@ -137,6 +137,7 @@ ul {
   align-items: center;
   background-color: #fff;
   border-radius: 0.25rem;
+  margin: 0 1rem 0 1rem;
   padding: 2rem;
 }
 
@@ -176,6 +177,17 @@ ul {
   background-color: var(--color-1);
   border-radius: 0.25rem;
   margin-top: 1rem;
+}
+
+.player {
+  text-align: center;
+  background: none;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  width: 100%;
 }
 
 .plus {
