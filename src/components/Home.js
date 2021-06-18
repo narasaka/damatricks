@@ -1,7 +1,6 @@
 import React from "react";
-import githubLogo from "../images/github-logo.png";
-import igLogo from "../images/ig-logo-round.png";
 import { Link } from "react-router-dom";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 
 const Home = () => {
   return (
@@ -21,11 +20,7 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            className="home-icons ig-logo"
-            src={igLogo}
-            alt="instagram logo"
-          />
+          <AiFillInstagram size={32} />
         </a>
         <a
           className="github-logo"
@@ -33,11 +28,7 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            className="home-icons github-logo"
-            src={githubLogo}
-            alt="github logo"
-          />
+          <AiFillGithub size={32} />
         </a>
       </footer>
     </div>

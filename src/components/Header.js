@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import igLogo from "../images/ig-logo-round.png";
-import githubLogo from "../images/github-logo.png";
+import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
+// import igLogo from "../images/ig-logo-round.png";
+// import githubLogo from "../images/github-logo.png";
 
 const Header = () => {
   return (
@@ -17,22 +18,14 @@ const Header = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                className="nav-icons ig-logo"
-                src={igLogo}
-                alt="instagram logo"
-              />
+              <AiFillInstagram size={32} className="ig-logo" />
             </a>
             <a
               href="https://github.com/narasaka/damatricks"
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                className="nav-icons github-logo"
-                src={githubLogo}
-                alt="github logo"
-              />
+              <AiFillGithub size={32} className="github-logo" />
             </a>
           </li>
         </ul>
