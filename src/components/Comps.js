@@ -449,7 +449,7 @@ const comps = [
   },
   {
     name: "Sakura Summer 2021 Intermediate",
-    id: "sso-2021-1-beginner",
+    id: "sso-2021-1-intermediate",
     tricks: [
       "Big cup - Knee bounce - Base cup - Down spike",
       "Around the block (Candlestrick grip)",
@@ -468,7 +468,7 @@ const comps = [
   },
   {
     name: "Sakura Summer 2021 Open",
-    id: "sso-2021-1-beginner",
+    id: "sso-2021-1-open",
     tricks: [
       "Around USA",
       "Around the Garden",
@@ -477,7 +477,7 @@ const comps = [
       "Spacewalk - 1 turn in",
       "Half goon - 1 turn in",
       "1 turn tap - 1 turn in",
-      "Candle grip swing - ken grip spike",
+      "Candle grip swing ken grip spike",
       "Vacuum cleaner - Trade spike",
       "Double lunar flip",
       "UFO Mateo spin",
