@@ -25,3 +25,4 @@
 - IKO 2021
 - BATB 2021
 - NAKO 2020
+- Sakura Summer Online 2021
