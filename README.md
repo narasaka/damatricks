@@ -21,8 +21,8 @@
 
 ## available tricklists
 
+- Sakura Summer Online 2021
 - SKO No Pro Open 2021
 - IKO 2021
 - BATB 2021
 - NAKO 2020
-- Sakura Summer Online 2021
