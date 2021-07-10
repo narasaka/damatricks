@@ -1,5 +1,24 @@
 const comps = [
   {
+    name: "Sakura Summer Online 2021 (Beginner)",
+    id: "sso-2021-1-beginner",
+    tricks: [
+      "Swing Candle Stick",
+      "Vacuum",
+      "Lady Bug",
+      "Lighthouse Falling",
+      "Funhouse Spike",
+      "Frying Pan - SPike",
+      "Swing Spike - Earth",
+      "Bird - Spike",
+      "Around Japan",
+      "Praying Mantis",
+      "Ken Drop",
+      "Airplane Jumping Stick",
+      "Moshikame x 15 - SPIKE!",
+    ],
+  },
+  {
     name: "SKO No Pro Open 2021 (Beginner)",
     id: "sko-2021-npo-1-beginner",
     tricks: [
