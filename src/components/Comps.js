@@ -1,13 +1,6 @@
 const comps = [
   {
-    name: "Contoh",
-    id: "sso-2021-1-beginner",
-    tricks: [
-      "Helicopter",
-    ],
-  },
-  {
-    name: "Sakura Summer Online 2021 Beginner",
+    name: "Sakura Summer 2021 (Beginner)",
     id: "sso-2021-1-beginner",
     tricks: [
       "Swing Candle Stick",
@@ -26,7 +19,7 @@ const comps = [
     ],
   },
   {
-    name: "Sakura Summer 2021 Intermediate",
+    name: "Sakura Summer 2021 (Intermediate)",
     id: "sso-2021-1-intermediate",
     tricks: [
       "Big cup - Knee bounce - Base cup - Down spike",
@@ -45,7 +38,7 @@ const comps = [
     ],
   },
   {
-    name: "Sakura Summer 2021 Open",
+    name: "Sakura Summer 2021 (Open)",
     id: "sso-2021-1-open",
     tricks: [
       "Around USA",
