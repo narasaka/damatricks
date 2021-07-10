@@ -1,5 +1,12 @@
 const comps = [
   {
+    name: "Contoh",
+    id: "sso-2021-1-beginner",
+    tricks: [
+      "Helicopter",
+    ],
+  },
+  {
     name: "Sakura Summer Online 2021 Beginner",
     id: "sso-2021-1-beginner",
     tricks: [
