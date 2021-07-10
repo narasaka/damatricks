@@ -1,15 +1,15 @@
 const comps = [
   {
-    name: "Sakura Summer 2021 Beginner",
+    name: "Sakura Summer Online 2021 Beginner",
     id: "sso-2021-1-beginner",
     tricks: [
       "Swing Candle Stick",
       "Vacuum",
       "Lady Bug",
-      "Lighthouse Falling",
+      "Lighthouse - Falling in",
       "Funhouse - Spike",
       "Frying Pan - Spike",
-      "Swing Spike - Earth",
+      "Swing Spike - Earthturn",
       "Bird - Spike",
       "Around Japan",
       "Praying Mantis",
