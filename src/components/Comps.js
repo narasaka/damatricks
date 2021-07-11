@@ -66,7 +66,7 @@ const comps = [
       "Airplane - 3 insta lighthouse flips - falling in",
       "The Lunar One with the Stilts (Inward lunar -  0.5 turn to small cup lunar -  hop to inward stilt - flip stilt - in)",
       "Tailwhip, airplane or stuntplane",
-      "Big cup - piroutte big cup - spike",
+      "Big cup - pirouette big cup - spike",
     ],
   },
   {
