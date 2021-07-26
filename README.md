@@ -1,10 +1,9 @@
 # damatricks
 
-**A web application built to aid kendama competitions (or your practice sessions if you're not a Gallagher).**  
-  
+**A web application built to aid kendama competitions (or your practice sessions if you're not a Gallagher).**
+
 ![GitHub](https://img.shields.io/github/license/narasaka/damatricks?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/narasaka/damatricks?style=flat-square)
-
 
 ## features
 
@@ -21,6 +20,7 @@
 
 ## available tricklists
 
+- Oceanside Kendama Open 2021
 - Sakura Summer Online 2021
 - SKO No Pro Open 2021
 - IKO 2021
