@@ -1,4 +1,6 @@
-const comps = [
+import { Comp } from "./models";
+
+export const competitions: Comp[] = [
   {
     name: "Hispanodama 2021",
     id: "hispanodama-2021-1-open",
@@ -828,5 +830,3 @@ const comps = [
     ],
   },
 ];
-
-export default comps;
