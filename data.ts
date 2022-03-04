@@ -2,6 +2,34 @@ import { Comp } from "./models";
 
 export const competitions: Comp[] = [
   {
+    name: "Washington AM-Open 2022",
+    id: "washington-2022-am-open",
+    tricks: [
+      "Juggle Spike",
+      "Wing, Flip Spike",
+      "Tap One Turn In",
+      "Bird, Bird Flip, Over the Valley, Small Bird Flip, Spike",
+      "Big Cup, Turntable, Spike",
+      "Spike, Gunslinger Whirlwind",
+      "Underbird, Nod off Underbird, Spike",
+      "Sweets Special Spike",
+      "Airplane, 360 Special",
+      "Lunar Flip x2, In",
+      "Lighthouse, Inward Lighthouse Flip, Inward Falling In",
+      "Spacewalk Swap Spike",
+      "Spike, Whirlwind, Inward Whirlwind",
+      "Stilt, Stilt Flip, In",
+      "Airplane, Double Jumping Stick",
+      "Mooncircle Spike",
+      "Inward Lunar, Inward Lunar Flip, In",
+      "Two Turn Airplane",
+      "Around USA",
+      "Kenflip Throw Lighthouse, In",
+      "Handlestall, Flip Spike",
+      "Airplane, Swap Base Cup, Downspike Fasthand",
+    ],
+  },
+  {
     name: "Hispanodama 2021",
     id: "hispanodama-2021-1-open",
     tricks: [

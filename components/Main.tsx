@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { Comp } from "../models";
 import Counter from "./Counter";
 import { competitions as comps } from "../data";
@@ -11,7 +11,7 @@ const Main: React.FC = () => {
   );
   const [selectedValue, setSelectedValue] = useState<string>("default");
   const [showNext, setShowNext] = useState<boolean>(false);
-  const [showResetList, setShowResetList] = useState<boolean>(false);
+  const [showReset, setShowReset] = useState<boolean>(false);
   const [playerOneScore, setPlayerOneScore] = useState<number>(0);
   const [playerTwoScore, setPlayerTwoScore] = useState<number>(0);
 
@@ -33,7 +33,7 @@ const Main: React.FC = () => {
       setSelectedValue(compObj.id);
       setCurrTrick(newTrick);
       setTricklist(newTricklist);
-      setShowResetList(false);
+      setShowReset(false);
       setShowNext(true);
     }
   };
@@ -48,7 +48,7 @@ const Main: React.FC = () => {
     if (tricklist.length === 0) {
       console.log("done");
       setCurrTrick("");
-      setShowResetList(true);
+      setShowReset(true);
       setShowNext(false);
       return;
     }
@@ -65,7 +65,7 @@ const Main: React.FC = () => {
     );
     setCurrTrick(newTrick);
     setTricklist(newTricklist);
-    setShowResetList(false);
+    setShowReset(false);
     setShowNext(true);
   };
 
@@ -74,10 +74,64 @@ const Main: React.FC = () => {
     setPlayerTwoScore(0);
   };
 
+  useEffect(() => {
+    const isInitialized = Boolean(localStorage.getItem("isInitialized"));
+    if (isInitialized) {
+      const gameState = JSON.parse(localStorage.getItem("gameState") || "{}");
+      const {
+        tricklist,
+        currTrick,
+        playerOneScore,
+        playerTwoScore,
+        selectedValue,
+        showNext,
+        showReset,
+      } = gameState;
+      setTricklist(tricklist);
+      setCurrTrick(currTrick);
+      setPlayerOneScore(playerOneScore);
+      setPlayerTwoScore(playerTwoScore);
+      setSelectedValue(selectedValue);
+      setShowNext(showNext);
+      setShowReset(showReset);
+    } else {
+      localStorage.setItem("isInitialized", "true");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const isInitialized = Boolean(localStorage.getItem("isInitialized"));
+    if (isInitialized) {
+      const gameState = {
+        tricklist,
+        currTrick,
+        playerOneScore,
+        playerTwoScore,
+        selectedValue,
+        showNext,
+        showReset,
+      };
+      localStorage.setItem("gameState", JSON.stringify(gameState));
+      console.log(gameState);
+    } else {
+      localStorage.setItem("isInitialized", "true");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    tricklist,
+    currTrick,
+    playerOneScore,
+    playerTwoScore,
+    selectedValue,
+    showNext,
+    showReset,
+  ]);
+
   return (
     <main>
       <select
-        className="dropdown"
+        className="dropdown text-center"
         onChange={handleChange}
         value={selectedValue}
       >
@@ -99,7 +153,7 @@ const Main: React.FC = () => {
             Next trick
           </button>
         )}
-        {showResetList ? (
+        {showReset ? (
           <button className="btn reset" onClick={handleResetList}>
             Reset tricklist
           </button>

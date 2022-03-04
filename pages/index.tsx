@@ -8,8 +8,6 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>damatricks</title>
-        <meta name="description" content="a kendama utility app" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="home">
         <header className="home-header">
