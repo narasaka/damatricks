@@ -113,7 +113,6 @@ const Main: React.FC = () => {
         showReset,
       };
       localStorage.setItem("gameState", JSON.stringify(gameState));
-      console.log(gameState);
     } else {
       localStorage.setItem("isInitialized", "true");
     }
