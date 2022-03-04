@@ -20,6 +20,9 @@
 
 ## available tricklists
 
+- Hispanodama 2021
+- NAKO 2021
+- Sweets Throwback Throwdown 2021
 - Oceanside Kendama Open 2021
 - Sakura Summer Online 2021
 - SKO No Pro Open 2021
