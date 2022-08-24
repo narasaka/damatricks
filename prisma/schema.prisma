@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider             = "mysql"
+  url                  = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+
+model Tricklist {
+  id          String   @id @default(cuid())
+  title       String
+  year        Int
+  eventNumber Int      @map("event_number")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+  tricks      Trick[]
+}
+
+model Trick {
+  id          String    @id @default(cuid())
+  title       String
+  tricklistId String    @map("tricklist_id")
+  tricklist   Tricklist @relation(fields: [tricklistId], references: [id])
+
+  @@index([tricklistId])
+}
